@@ -230,7 +230,7 @@ export default function CreateGroupGoal() {
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1 flex items-center">
-                                    <FiDollarSign className="mr-2" /> Target Amount FCFA
+                                     Target Amount FCFA
                                 </label>
                                 <input
                                     type="text"
