@@ -3,7 +3,7 @@ import { useState } from "react";
 import React from "react";
 import { useAuth } from "../AuthenticationContext";
 import { useNavigate } from "react-router-dom";
-import NewNavbar from "./newNavBar";
+import NewNavbar from "./NewNavBar";
 import Footer from "./Footer";
 import { toast } from "react-toastify";
 

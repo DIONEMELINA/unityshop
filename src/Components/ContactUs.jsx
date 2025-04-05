@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import NewNavbar from "./newNavBar";
+import NewNavbar from "./NewNavBar";
 import Sponsor from "./Sponsor";
 import Footer from "./Footer";
 import bgImage from '/contactus.jpg';

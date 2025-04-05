@@ -4,7 +4,7 @@ import { FiDollarSign, FiImage, FiPackage } from "react-icons/fi";
 import Footer from './Footer';
 import { CreateGoal } from '../purchaseService';
 import { useNavigate } from 'react-router-dom';
-import NewNavbar from './newNavBar';
+import NewNavbar from './NewNavBar';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // eslint-disable-next-line no-unused-vars

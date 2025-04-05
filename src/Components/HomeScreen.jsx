@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 import Features from './Features'
-import NewNavbar from "./newNavBar";
+import NewNavbar from "./NewNavBar";
 import AboutUs from "./AboutUs";
 import { useEffect } from "react";
 import Footer from "./Footer";
-import ContactUs from "./Contactus";
+import ContactUs from "./ContactUs";
 import HeroSection from "./HeroSection";
 import Sponsor from "./Sponsor";
 import Group from "./Group";

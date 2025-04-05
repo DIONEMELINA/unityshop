@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import NewNavbar from './newNavBar';
+import NewNavbar from './NewNavBar';
 import Footer from './Footer';
 
 export default function Login() {

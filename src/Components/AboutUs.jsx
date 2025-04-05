@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import NewNavbar from "./newNavBar";
+import NewNavbar from "./NewNavBar";
 import Footer from "./Footer";
 import Sponsor from "./Sponsor";
 import { Users, Package, ShoppingCart, Percent } from "lucide-react";

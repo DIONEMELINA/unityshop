@@ -3,7 +3,7 @@ import React from 'react';
 import { User, Phone, MapPin, Mail, Edit2 } from 'lucide-react';
 import { useAuth } from '../AuthenticationContext';
 import Footer from './Footer';
-import NewNavbar from './newNavBar';
+import NewNavbar from "./NewNavBar";
 
 const ProfileScreen = () => {
     const { user } = useAuth();

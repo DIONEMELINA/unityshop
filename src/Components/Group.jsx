@@ -1,8 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useAuth } from '../AuthenticationContext';
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import { ShoppingBasket, Users, ArrowRight, Percent } from "lucide-react";
+import { ShoppingBasket, Users, ArrowRight,} from "lucide-react";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Group({ groupCreatedByOthers }) {

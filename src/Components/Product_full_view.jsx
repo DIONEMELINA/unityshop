@@ -6,7 +6,7 @@ import { useGroup } from '../purchaseContext';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './Footer';
-import NewNavbar from './newNavBar';
+import NewNavbar from './NewNavBar';
 import { toast, ToastContainer } from 'react-toastify';
 
 
