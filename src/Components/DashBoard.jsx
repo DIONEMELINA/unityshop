@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from '../AuthenticationContext';
 import SideBar from '../Components/SideBar';
-import NewNavbar from "./newNavBar";
+import NewNavbar from "./NewNavBar";
 
 import { useGroup } from "../purchaseContext";
 import { useNavigate, useLocation } from "react-router-dom";
