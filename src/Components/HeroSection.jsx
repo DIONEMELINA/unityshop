@@ -60,7 +60,7 @@ const HeroSection = () => {
                 );
                 setFade(false);
             }, 500);
-        }, 5000);
+        }, 5000); // Change slide every 5 seconds
 
         return () => {
             clearInterval(interval);
@@ -109,11 +109,19 @@ const HeroSection = () => {
                         <ArrowRight size={16} className="hidden xs:block" />
                     </button>
                 </div>
+            </div>
 
-                {/* Slide Indicators */}
-                <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2">
-                    
-                </div>
+            {/* Carousel Indicators at the bottom */}
+            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                {slides.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${currentIndex === index
+                                ? "bg-white"
+                                : "bg-white/60"
+                            }`}
+                    />
+                ))}
             </div>
         </section>
     );
