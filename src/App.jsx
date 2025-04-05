@@ -12,10 +12,10 @@ import { GroupProvider } from './purchaseContext';
 import ProductFullView from './Components/Product_full_view';
 import UpdateGoal from './Components/UpdateGoal';
 import AboutUs from './Components/AboutUs';
-import ContactUs from './Components/Contactus';
+import ContactUs from './Components/ContactUs';
 import DashBoardPage from './pages/DashBoardPage';
 import Request from './Components/Request';
-import Update from './Components/Update';
+
 
 
 function App() {
