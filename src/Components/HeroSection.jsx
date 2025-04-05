@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../AuthenticationContext";
 import { useNavigate } from "react-router-dom";
@@ -9,25 +8,26 @@ const HeroSection = () => {
     const { user } = useAuth();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const slides = [
         {
             image: "/buying_together.jpg",
             title: "Community Powered Shopping",
             subtitle: "Discover products your neighbors are buying together",
-            mobileImage: "/buying_together_mobile.jpg",
+            mobileImage: "/buying_together.jpg",
         },
         {
             image: "/payment.jpg",
             title: "Shop Smarter, Together",
             subtitle: "Pool resources with others to unlock bulk discounts and save money",
-            mobileImage: "/payment_mobile.jpg",
+            mobileImage: "/payment.jpg",
         },
         {
             image: "/delivery.jpg",
             title: "Shared Shipping Benefits",
             subtitle: "Split delivery costs with your community and reduce expenses",
-            mobileImage: "/delivery_mobile.jpg",
+            mobileImage: "/delivery.jpg",
         },
     ];
 
@@ -40,6 +40,18 @@ const HeroSection = () => {
     };
 
     useEffect(() => {
+        // Check if the screen is mobile on initial load
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        // Add event listener to check screen size change
+        window.addEventListener("resize", handleResize);
+
+        // Set the initial value
+        handleResize();
+
+        // Start the interval for auto slide change
         const interval = setInterval(() => {
             setFade(true);
             setTimeout(() => {
@@ -50,7 +62,10 @@ const HeroSection = () => {
             }, 500);
         }, 5000);
 
-        return () => clearInterval(interval);
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     return (
@@ -63,10 +78,12 @@ const HeroSection = () => {
                         className={`absolute inset-0 transition-opacity duration-1000 ease-in-out bg-center bg-cover ${index === currentIndex ? "opacity-100" : "opacity-0"
                             }`}
                         style={{
-                            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${window.innerWidth < 640 && slide.mobileImage
-                                    ? slide.mobileImage
-                                    : slide.image
+                            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${isMobile && slide.mobileImage
+                                ? slide.mobileImage
+                                : slide.image
                                 })`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
                         }}
                     />
                 ))}
@@ -95,23 +112,7 @@ const HeroSection = () => {
 
                 {/* Slide Indicators */}
                 <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2">
-                    {slides.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => {
-                                setFade(true);
-                                setTimeout(() => {
-                                    setCurrentIndex(index);
-                                    setFade(false);
-                                }, 500);
-                            }}
-                            className={`w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 rounded-full transition-all ${index === currentIndex
-                                    ? "bg-white w-4 sm:w-5"
-                                    : "bg-white/50 hover:bg-white/80"
-                                }`}
-                            aria-label={`Slide ${index + 1}`}
-                        />
-                    ))}
+                    
                 </div>
             </div>
         </section>

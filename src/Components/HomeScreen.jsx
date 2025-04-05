@@ -43,7 +43,7 @@ export default function HomeScreen() {
     }, []);
 
     return (
-        <div className="h-screen">
+        <div>
             <NewNavbar />
             {isLoading ? (
                 <div className="flex justify-center items-center h-[50vh]">
@@ -59,7 +59,10 @@ export default function HomeScreen() {
                 
             </div>
             }
-            <Footer />
+            <div className="max-md:pt-[50%]">
+                <Footer />
+            </div>
+            
         </div>
     )
 }

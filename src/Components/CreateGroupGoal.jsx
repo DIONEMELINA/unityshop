@@ -230,7 +230,7 @@ export default function CreateGroupGoal() {
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1 flex items-center">
-                                    <FiDollarSign className="mr-2" /> Target Amount (₦)
+                                    <FiDollarSign className="mr-2" /> Target Amount FCFA
                                 </label>
                                 <input
                                     type="text"
@@ -293,7 +293,7 @@ export default function CreateGroupGoal() {
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Unit Price (₦)</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Unit Price FCFA</label>
                                     <input
                                         type="text"
                                         name="product_unit_price"
@@ -306,7 +306,7 @@ export default function CreateGroupGoal() {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Bulk Price (₦)</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Bulk Price FCFA</label>
                                     <input
                                         type="text"
                                         name="product_bulk_price"

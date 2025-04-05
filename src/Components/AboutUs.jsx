@@ -108,11 +108,13 @@ const AboutUs = () => {
             </section>
 
             {isAboutScreen && (
-                <div className="flex flex-col pt-10 pb-20">
+                <div>
                     <Sponsor />
-                    
+                    <div className="h-full">
                         <Footer />
-                    
+                    </div>
+
+
                 </div>
             )}
         </div>

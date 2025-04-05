@@ -277,7 +277,7 @@ export default function UpdateGoal() {
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-medium text-gray-700 mb-1">Target Amount (₦)</label>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Target Amount FCFA</label>
                                         <input
                                             type="text"
                                             name="target_amount"
@@ -338,7 +338,7 @@ export default function UpdateGoal() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Unit Price (₦)</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Unit Price FCFA</label>
                                             <input
                                                 type="text"
                                                 name="product_unit_price"
@@ -352,7 +352,7 @@ export default function UpdateGoal() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Bulk Price (₦)</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Bulk Price FCFA</label>
                                             <input
                                                 type="text"
                                                 name="product_bulk_price"

@@ -7,9 +7,8 @@ const Footer = () => {
   const isUser = Boolean(user);
 
   return (
-    <footer className="bg-slate-800 text-white px-6 py-10 mt-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-
+    <footer className="bg-slate-800 text-white px-6 py-10 sm:px-4 md:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-3">
         {/* About Unity Shop */}
         <div>
           <h2 className="text-xl font-semibold mb-4">About Unity Shop</h2>
@@ -36,7 +35,7 @@ const Footer = () => {
         {/* Sponsors */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Our Sponsors</h2>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
             <img
               src="/techChantier.png"
               alt="Sponsor 1"
@@ -54,7 +53,7 @@ const Footer = () => {
             />
             <img
               src="/afrovision.jpg"
-              alt="Sponsor 3"
+              alt="Sponsor 4"
               className="w-20 h-auto object-contain rounded-sm"
             />
           </div>
@@ -70,3 +69,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
