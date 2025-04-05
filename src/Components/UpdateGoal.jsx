@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { UpdateAGoal } from '../purchaseService';
 import { useGroup } from '../purchaseContext';
 import { toast, ToastContainer } from "react-toastify";
-import NewNavbar from './newNavBar';
+import NewNavbar from './NewNavBar';
 import "react-toastify/dist/ReactToastify.css";
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
