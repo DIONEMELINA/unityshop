@@ -7,7 +7,7 @@ const Footer = () => {
   const isUser = Boolean(user);
 
   return (
-    <footer className="bg-slate-800 text-white px-6 py-10 sm:px-4 md:px-6 lg:px-8">
+    <footer className="bg-slate-800 text-white px-6 py-10 sm:px-4 md:px-6 lg:px-8 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-3">
         {/* About Unity Shop */}
         <div>

@@ -59,7 +59,7 @@ export default function HomeScreen() {
                 
             </div>
             }
-            <div className="max-md:pt-[50%] md:[100%] lg:[100%]" >
+            <div className="max-md:pt-[50%] md:[100%] lg:[10ovh]" >
                 <Footer />
             </div>
             
